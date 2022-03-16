@@ -1,12 +1,44 @@
 body
 {
-  background-color: #010001;
+  background-color: #000000;
+  font-family: "times-new-roman", Times, serif;
+  font-size: 14px;
 }
 
-.rainbow {
-  background-image: -webkit-gradient(linear, left top. right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.30, #22f), color-stop(0.45, #2ff), color-stop(0.60, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-  background-image: gradient(linear, left top. right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.30, #22f), color-stop(0.45, #2ff), color-stop(0.60, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-  color:transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+h1
+{
+    font-family: "times-new-roman", Times, serif;
+    text-align:center;
+    font-size: 225%;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+@keyframes rainbow
+{
+  0% {color: #ff0000}
+  15% {color: #ff9900}
+  22% {color: #ffff00}
+  29% {color: #33cc33}
+  36% {color: #0000ff}
+  43% {color: #9933ff}
+  50% {color: #cc00ff}
+  57% {color: #9933ff}
+  64% {color: #0000ff}
+  71% {color: #33cc33}
+  78% {color: #ffff00}
+  85% {color: #ff9900}
+  100% {color: #ff0000}
+}
+
+.rainbow
+{
+  animation-name: rainbow;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+}
+
+video 
+{
+  object-fit: contain;
 }
